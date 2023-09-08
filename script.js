@@ -3,17 +3,17 @@ function firstNonRepeatedChar(str) {
 	let n = str.length;
 	let freq = [26];
 
-	for(int i=0; i<n; i++) {
-		freq[s.charAt(i)-'a']++;
+	for(let i=0; i<n; i++) {
+		freq[str[i].charCodeAt(0)]++;
 	}
 
-	for(int i=0; i<n; i++) {
-		if(freq[s.charAt(i)-'a']>0 && freq[s.charAt(i)-'a']==1) {
+	for(let i=0; i<n; i++) {
+		if(freq[s[i].charCodeAt(0)]>0 && freq[s[i].charCodeAt(0)]==1) {
 			return s.charAt(i);
 		}
 	} 
 	
 	return null;
 }
- const input = prompt("Enter a string");
+ //const input = prompt("Enter a string");
  alert(firstNonRepeatedChar(input)); 
