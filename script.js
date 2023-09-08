@@ -12,7 +12,7 @@ function firstNonRepeatedChar(str) {
 					return s.charAt(i);
 				}
 			}
-
+	
 			return null;
 }
  const input = prompt("Enter a string");
